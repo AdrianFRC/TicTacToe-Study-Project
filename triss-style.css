@@ -73,7 +73,6 @@ button:hover {
 }
 
 .turn{
-    color: #3cc4bf;
     grid-column: 1/3;
     display: flex;
     align-items: center;
