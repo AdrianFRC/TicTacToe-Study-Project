@@ -1,0 +1,17 @@
+footer {
+  color: white;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--yellow);
+}
+
+footer .dev {
+  color: var(--turquoise);
+}
