@@ -1,0 +1,41 @@
+.player-enter {
+  opacity: 0;
+  transform: scale(1);
+}
+
+.player-enter-active {
+  opacity: 1;
+  transform: translateX(2em);
+  transition: opacity 300ms, transform 600ms;
+}
+
+.player.exit {
+  opacity: 1;
+}
+
+.player-exit-active {
+  opacity: 0;
+  transform: translateY(-2em);
+  transition: opacity 300ms, transform 600ms;
+}
+
+.icon-enter {
+  opacity: 0;
+  transform: scale(3);
+}
+
+.icon-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 600ms;
+}
+
+.icon.exit {
+  opacity: 1;
+}
+
+.icon-exit-active {
+  opacity: 0;
+  transform: scale(3);
+  transition: opacity 500ms, transform 600ms;
+}

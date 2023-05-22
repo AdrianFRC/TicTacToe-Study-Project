@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+:root {
+  --dark-gray: #1a2a32;
+  --gray: #2e4756;
+  --turquoise: #3cc4bf;
+  --yellow: #f2b147;
+  --light-gray: #d3d3d3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#react-root {
+  width: 250px;
+}
+
+body {
+  background-color: #1a2a32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.turquoise {
+  color: var(--turquoise);
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.border {
+  border: 1px solid rgba(211, 211, 211, 0.4) !important;
+}
+
+.grid {
+  display: grid;
+  width: 250px;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: 50px repeat(3, 80px) 60px;
+  gap: 5px;
+}
+
+.turn {
+  grid-column: 1/3;
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 20px;
+  align-self: center;
+}
+
+.turn-player {
+  position: absolute;
+  width: 100px;
+}
+
+.turn-player-box {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  #react-root {
+    width: 490px;
+  }
+  .grid {
+    width: 490px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: 50px repeat(3, 150px) 60px;
+    gap: 20px;
+  }
+  .turn-player {
+    width: 200px;
+  }
+  .turn-player-box {
+    margin-bottom: 20px;
+  }
+}
+
+.move-icon {
+  font-size: 3rem;
+  margin-left: 10px;
+  animation: 0.6s ease-in-out turn-icon-animation;
+}
+
+@keyframes turn-icon-animation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.square {
+  background-color: #2e4756;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.square:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.score p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.score span {
+  font-size: 12px;
+  margin-top: 2px;
+}
