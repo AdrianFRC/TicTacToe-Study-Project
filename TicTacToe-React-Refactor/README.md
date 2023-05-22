@@ -1,4 +1,4 @@
-#TicTacToe-React-Refactor-Project
+# TicTacToe-React-Refactor-Project
 
 Check the game refactored with react in the link below:
 
