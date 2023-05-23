@@ -72,15 +72,10 @@ export default function App() {
                   <i
                     className={classNames(
                       "fa-solid",
+                      "turn-icon",
                       game.currentPlayer.colorClass,
                       game.currentPlayer.iconClass
                     )}
-                    style={{
-                      fontSize: "2rem",
-                      position: "absolute",
-                      top: "0",
-                      left: "0",
-                    }}
                   ></i>
                 </CSSTransition>
               </TransitionGroup>

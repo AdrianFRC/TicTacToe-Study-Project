@@ -17,9 +17,12 @@
   border: none;
 }
 
-html,
-body {
+html {
   height: 100%;
+}
+body {
+  min-height: 100%;
+  margin-top: 3%;
 }
 
 #react-root {
@@ -77,6 +80,13 @@ button:hover {
   align-self: center;
 }
 
+.turn-icon{
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .turn-player {
   position: absolute;
   width: 100px;
@@ -85,6 +95,23 @@ button:hover {
 .turn-player-box {
   position: relative;
   margin-bottom: 40px;
+}
+
+@media only screen and (orientation: landscape){
+  .grid {
+    display: grid;
+    width: 250px;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: 40px repeat(3, 80px) 40px;
+    gap: 5px;
+  }
+
+  .turn-icon {
+    font-size: 2rem;
+  }
+  .turn-player {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 768px) {
