@@ -87,6 +87,16 @@ button:hover {
   margin-bottom: 40px;
 }
 
+@media only screen and (orientation: landscape){
+  .grid {
+    display: grid;
+    width: 250px;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: 50px repeat(3, 80px) 40px;
+    gap: 5px;
+  }
+}
+
 @media (min-width: 768px) {
   #react-root {
     width: 490px;

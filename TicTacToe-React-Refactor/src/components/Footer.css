@@ -15,3 +15,12 @@ footer a {
 footer .dev {
   color: var(--turquoise);
 }
+
+@media only screen and (orientation: landscape) {
+  footer {
+    margin-top: 0;
+  }
+  footer p {
+    font-size: 0rem;
+  }
+}
